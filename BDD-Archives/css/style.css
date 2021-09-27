@@ -1,0 +1,155 @@
+*{
+  font-family: dissimo, serif;
+}
+
+.navbar {
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0 0 0 0;
+  overflow: hidden;
+  background-color: #3d3939;
+}
+
+.navbar-nav {
+  margin-left: 30px;
+}
+
+.navbar a.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+ul li:hover {
+  background: #ea943e;
+}
+
+.btn-info{
+  background-color: navy;
+  border-color: navy;
+}
+
+.btn-info:hover{
+   background: #94edf7;
+   border-color: #94edf7;
+}
+
+.btn-secondary{
+  background-color: navy;
+  border-color: navy;
+}
+
+.btn-secondary:hover{
+   background: #94edf7;
+   border-color: #94edf7;
+}
+
+.btn-warning{
+  background-color: #ea943e;
+  border-color: #ea943e;
+  color: white;
+  margin-left: 43%;
+}
+
+.btn-warning:hover{
+   background: #94edf7;
+   border-color: #94edf7;
+}
+
+.form-control{
+  width: 20px;
+  height: 20px;
+}
+
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2700px;
+    padding: 5px 5px;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+#myInput{
+  width: 20%;
+  height: 2%;
+  font-size: 16px;
+  padding: 10px 20px 12px 10px;
+  border: 2px solid #3d3939;
+  margin-bottom: 12px;
+  margin-right: 290px;
+  float: right;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#title{
+font-weight: bold;
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+
+.jumbotron{
+  border-radius: 0px;
+}
+
+#pic{
+  background-image:
+    url("../img/IMG_0874.jpg");
+    background-size: 100%;
+    background-position: 0px -285px;
+    filter: blur(1px);
+    height: 200px;}
+
+
+#linear-gradient{
+  background-image:
+    linear-gradient(to bottom, rgba(199, 227, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+table {
+	border-collapse: collapse;
+	width: 500px;
+}
+th {
+	background-color: #54585d;
+	border: 1px solid #54585d;
+}
+th:hover {
+	background-color: #64686e;
+}
+th a {
+	display: block;
+	text-decoration:none;
+	padding: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+}
+th a i {
+	margin-left: 5px;
+	color: rgba(255,255,255,0.4);
+}
+td {
+	padding: 10px;
+	color: #636363;
+	border: 1px solid #dddfe1;
+}
+tr {
+	background-color: #ffffff;
+}
+tr .highlight {
+	background-color: #ea943e;
+}

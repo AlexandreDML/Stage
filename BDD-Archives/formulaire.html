@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Archives BUT Métiers du Multimédia et de l'Internet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulaire d'ajout de rapports</h1>
+        <form action="donnees.php" method="post">
+          <p>
+            <label class="Champs" for="Noms">Nom de l'étudiant : </label>
+            <input type="text" class="inf" name="Noms" />
+          </p>
+          <p>
+            <label class="Champs" for="Types">Types du rapport (Projet tutoré ou Stage) : </label>
+            <input type="radio" name="Types" value="Projet tutoré" id="Projet tutoré" onClick="document.getElementById('GR').style.display='block'; document.getElementById('EN').style.display='none'" />
+            <label for="Projet tutoré">Projet tutoré</label>
+
+            <input type="radio" name="Types" value="Stage" id="Stage" onClick="document.getElementById('EN').style.display='block'; document.getElementById('GR').style.display='none'" />
+            <label for="Stage">Stage</label>
+          </p>
+
+          <p>
+            <label class="Champs" for="Themes">Thème : </label>
+            <input type="text" class="inf" name="Themes" />
+          </p>
+
+          <p>
+            <label class="Champs" for="Notes">Note du rapport : </label>
+            <input type="text" class="inf" name="Notes" />
+          </p>
+
+          <p>
+            <label class="Champs" for="Annees">Année du rapport : </label>
+            <input type="text" class="inf" name="Annees" />
+          </p>
+          <p id="GR">
+            <label class="Champs" for="Groupes">Noms des étudiants membre du groupe : </label>
+            <textarea class="inf" type="text" name="Groupes" style="height:200px"></textarea>
+          </p>
+
+          <p id="EN" style="display:none;">
+            <label class="Champs" for="Entreprises">Nom de l'entreprise où a été effectué le stage : </label>
+            <input type="text" class="inf" name="Entreprises" />
+          </p>
+          <p>
+              <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </p>
+        </form>
+      </div>
+    </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
